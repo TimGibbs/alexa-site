@@ -11,20 +11,20 @@
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Bodoni+Moda:400,100,300,700" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
     </head>
     <body id="page-top">
         <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
             <div class="container">
                 <a class="navbar-brand" href="#page-top">Dr Alexa Roxborough</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                    <ul class="navbar-nav ms-auto py-4 py-lg-0">
                         <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
                         <li class="nav-item"><a class="nav-link" href="#accreditation">Training & Accreditation</a></li>
                         <li class="nav-item"><a class="nav-link" href="#appointments">Appointments & Fees</a></li>
@@ -33,17 +33,18 @@
                 </div>
             </div>
         </nav>
+        <div class="inject-padding"></div>
         <!-- Masthead-->
-        <header class="masthead">
+        <!-- <header class="masthead">
             <div class="container">
                 <div class="masthead-heading text-uppercase">It's Nice To Meet You</div>
             </div>
-        </header>
+        </header> -->
         <!-- About Me-->
         <section class="page-section" id="about">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">About Me</h2>
+                    <h2 class="section-heading">About Me</h2>
                 </div>
                 <div class="row">
                     <div class="col-lg-3 col-sm-12">
@@ -60,7 +61,7 @@
         <section class="page-section" id="accreditation">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Training & Accreditation</h2>
+                    <h2 class="section-heading">Training & Accreditation</h2>
                     <p class="section-subheading text-muted">I trained as a clinical psychologist at University College London before completing Postgraduate Diploma in Cognitive Behavioural Therapies at the Institute of Psychiatry, Psychology and Neuroscience, Kings College London. I am registered with the Health and Care Professions Council (registration number: PYL32690) and accredited by the British Association for Behavioural and Cognitive Psychotherapies. In my NHS work I am based at the Centre for Anxiety Disorders and Trauma in the Maudsley hospital, which is a national specialist tertiary service. My role is in the parental anxiety sub-team at the clinic, which has provided me with a lot of experience in treating pregnant women and new parents with anxiety disorders and trauma- particularly perinatal OCD and birth trauma. I recently worked as a therapist on a randomised clinical trial comparing standard weekly treatments with intensive CBT for anxiety disorders in pregnancy, which has expanded my proficiency in using exposure-based treatments in pregnancy (an area in which many clinicians lack confidence) and delivering intensive treatments. I am a member of the BABCP perinatal special interest group and am knowledgeable about the specific perinatal competencies needed to deliver treatment to women in this vulnerable time. In addition to my clinical work, I provide supervision to trainees and qualified clinicians, and deliver teaching to other NHS teams and on training courses. I have been a visiting speaker at various universities and professional organisations including Kings College London, Exeter University, and the Royal College of Obstetrics and Gynaecology. I have a particular interest in specific phobia of vomiting in new mothers (link to my SPOV paper here). </p>
                 </div>
         </section>
@@ -68,7 +69,7 @@
         <section class="page-section" id="appointments">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Appointments & Fees</h2>
+                    <h2 class="section-heading">Appointments & Fees</h2>
                     <p class="section-subheading text-muted">The first step is an initial assessment to establish a formulation of the problem and ascertain whether or not CBT is the right fit for you. If not, I can make alternative recommendations. If we proceed, sessions are weekly (unless agreed otherwise) and last for 55 minutes.</p>
                     <p class="section-subheading text-muted">Initial assessment- £150</p>
                     <p class="section-subheading text-muted">Follow-up sessions - £150</p>
@@ -79,8 +80,37 @@
         <section class="page-section" id="contact">
             <div class="container">
                 <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Contact</h2>
-                    <div class="text-center"><a href="mailto:Alexa@DrRoxborough.com">Alexa@DrRoxborough.com</a></div>
+                    <h2 class="section-heading">Contact</h2>
+                    <form id="contactForm" action="https://formspree.io/f/xzbnbkel" method="POST">
+                        <div class="row align-items-stretch mb-5">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <!-- Name input-->
+                                    <input class="form-control" id="name" type="text" placeholder="Your Name *" data-sb-validations="required" name="name"/>
+                                    <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                                </div>
+                                <div class="form-group">
+                                    <!-- Email address input-->
+                                    <input class="form-control" id="email" type="email" placeholder="Your Email *" data-sb-validations="required,email" name="email"/>
+                                    <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
+                                    <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+                                </div>
+                                <div class="form-group mb-md-0">
+                                    <!-- Phone number input-->
+                                    <input class="form-control" id="phone" type="tel" placeholder="Your Phone *" data-sb-validations="required" name="phone"/>
+                                    <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group form-group-textarea mb-md-0">
+                                    <!-- Message input-->
+                                    <textarea class="form-control" id="message" placeholder="Your Message *" data-sb-validations="required" name="message"></textarea>
+                                    <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center"><button class="btn btn-primary btn-xl text-uppercase" id="submitButton" type="submit">Send Message</button></div>
+                    </form>
                 </div>
         </section>
         <!-- Footer-->
