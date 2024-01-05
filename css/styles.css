@@ -449,6 +449,10 @@ legend + * {
   -webkit-appearance: textfield;
 }
 
+.headshot {
+  border-radius: 10px
+}
+
 /* rtl:raw:
 [type="tel"],
 [type="url"],
