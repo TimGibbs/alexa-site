@@ -562,6 +562,10 @@ progress {
   }
 }
 
+.list-circle {
+  list-style: circle;
+}
+
 .list-unstyled {
   padding-left: 0;
   list-style: none;
