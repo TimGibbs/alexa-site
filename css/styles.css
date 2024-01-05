@@ -453,6 +453,10 @@ legend + * {
   border-radius: 10px
 }
 
+.logo {
+  border-radius: 5px;
+  vertical-align: middle;
+}
 /* rtl:raw:
 [type="tel"],
 [type="url"],
