@@ -85,6 +85,10 @@
         <!-- Training & Accreditation-->
         <section class="page-section" id="accreditation">
             <div class="container">
+                <header class="accreditation-header">
+                    <div id="logo"></div>
+                    <div id="language"></div>
+                </header>
                 <div class="text-center">
                     <h2 class="section-heading">Training & Accreditation</h2>
                     <p class="section-subheading text-muted">I trained as a clinical psychologist at University College London before completing Postgraduate Diploma in Cognitive Behavioural Therapies at the Institute of Psychiatry, Psychology and Neuroscience, Kings College London.</p>
@@ -100,6 +104,10 @@
         <!-- Appointments & Fees-->
         <section class="page-section" id="appointments">
             <div class="container">
+                <header class="appointments-header">
+                    <div id="logo"></div>
+                    <div id="language"></div>
+                </header>
                 <div class="text-center">
                     <h2 class="section-heading">Appointments & Fees</h2>
                     <p class="section-subheading text-muted">The first step is an initial assessment to establish a formulation of the problem and ascertain whether or not CBT is the right fit for you. If not, I can make alternative recommendations. If we proceed, sessions are weekly (unless agreed otherwise) and last for 55 minutes.</p>
@@ -111,6 +119,10 @@
         <!-- Contact-->
         <section class="page-section" id="contact">
             <div class="container">
+                <header class="contact-header">
+                    <div id="logo"></div>
+                    <div id="language"></div>
+                </header>
                 <div class="text-center">
                     <h2 class="section-heading">Contact</h2>
                     <form id="contactForm" action="https://formspree.io/f/xzbnbkel" method="POST">
@@ -118,25 +130,25 @@
                             <div class="col-md-6">
                                 <div class="form-group">
                                     <!-- Name input-->
-                                    <input class="form-control" id="name" type="text" placeholder="Your Name *" data-sb-validations="required" name="name"/>
+                                    <input class="form-control" id="name" type="text" placeholder="Your Name *" required name="name"/>
                                     <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
                                 </div>
                                 <div class="form-group">
                                     <!-- Email address input-->
-                                    <input class="form-control" id="email" type="email" placeholder="Your Email *" data-sb-validations="required,email" name="email"/>
+                                    <input class="form-control" id="email" type="email" placeholder="Your Email *" required name="email"/>
                                     <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
                                     <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
                                 </div>
                                 <div class="form-group mb-md-0">
                                     <!-- Phone number input-->
-                                    <input class="form-control" id="phone" type="tel" placeholder="Your Phone *" data-sb-validations="required" name="phone"/>
+                                    <input class="form-control" id="phone" type="tel" placeholder="Your Phone *" name="phone"/>
                                     <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group form-group-textarea mb-md-0">
                                     <!-- Message input-->
-                                    <textarea class="form-control" id="message" placeholder="Your Message *" data-sb-validations="required" name="message"></textarea>
+                                    <textarea class="form-control" id="message" placeholder="Your Message *" required name="message"></textarea>
                                     <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
                                 </div>
                             </div>
