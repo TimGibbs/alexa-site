@@ -192,16 +192,22 @@ header {
   background-size: cover;
 }
 
+header.privacy-header {
+  background-image: url("../assets/art/WLA_lacma_Monet_Nympheas.webp");
+}
+header.terms-header {
+  background-image: url("../assets/art/1982.825 - Water Lily Pond.webp");
+}
 header.accreditation-header {
-  background-image: url("../assets/art/picture\ 1.webp");
+  background-image: url("../assets/art/1933.1157 - Water Lilies.webp");
 }
 
 header.appointments-header {
-  background-image: url("../assets/art/picture\ 5.webp");
+  background-image: url("../assets/art/1933.1156 - Branch of the Seine near Giverny (Mist).webp");
 }
 
 header.contact-header {
-  background-image: url("../assets/art/picture\ 4.webp");
+  background-image: url("../assets/art/waterloo_bridge,_london,_at_sunset_1983.1.28.webp");
 }
 
 address {
@@ -5274,7 +5280,7 @@ textarea.form-control-lg {
 
 .modal {
   --bs-modal-zindex: 1055;
-  --bs-modal-width: 500px;
+  --bs-modal-width: 95%;
   --bs-modal-padding: 1rem;
   --bs-modal-margin: 0.5rem;
   --bs-modal-color: ;
@@ -10879,12 +10885,12 @@ p {
 .page-section {
   padding: 6rem 0 0 0;
 }
-.page-section h2.section-heading, .page-section .section-heading.h2 {
+h2.section-heading, .page-section .section-heading.h2 {
   font-size: 2.5rem;
   margin-top: 2rem;
   margin-bottom: 1rem;
 }
-.page-section h3.section-subheading, .page-section .section-subheading.h3 {
+h3.section-subheading, .page-section .section-subheading.h3 {
   font-size: 1rem;
   font-weight: 400;
   font-style: italic;
