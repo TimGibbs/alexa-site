@@ -126,7 +126,7 @@ p {
 
 header {
   padding-top: 6rem;
-  padding-bottom: 10rem;
+  padding-bottom: 6rem;
   text-align: center;
   color: #fff;
   background-repeat: no-repeat;
@@ -153,6 +153,10 @@ header.appointments-header {
 
 header.contact-header {
   background-image: url("../assets/art/waterloo_bridge,_london,_at_sunset_1983.1.28.webp");
+}
+
+header.about-header {
+  background-image: url("../assets/art/the_seine_at_giverny_1963.10.180.webp");
 }
 
 ol,
@@ -223,6 +227,7 @@ textarea {
 .headshot {
   padding-top: 15px;
   border-radius: 10px;
+  max-height: 500px;
 }
 
 .logo {
@@ -5189,9 +5194,9 @@ p {
   padding: 6rem 0 0 0;
 }
 h2.section-heading, .page-section .section-heading.h2 {
-  font-size: 2.5rem;
+  font-size: 4rem;
   margin-top: 2rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 
@@ -5210,8 +5215,8 @@ h2.section-heading, .page-section .section-heading.h2 {
 #mainNav .navbar-brand {
   color: #212529;
   font-family: "Montserrat", Arial, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-weight: 700;
-  letter-spacing: 0.0625em;
+  /* font-weight: 700;
+  letter-spacing: 0.0625em; */
 }
 #mainNav .navbar-brand img {
   height: 1.5rem;
@@ -5265,9 +5270,6 @@ h2.section-heading, .page-section .section-heading.h2 {
 section#contact {
   padding: 3rem 0;
 }
-section#contact .section-heading {
-  color: #000;
-}
 section#contact form#contactForm .form-group {
   margin-bottom: 1.5rem;
 }
@@ -5306,4 +5308,11 @@ section#contact form#contactForm ::-webkit-input-placeholder {
 
 div.container {
   text-align: center;
+}
+
+.name {
+  font-weight: 1000;
+}
+.letters {
+  font-size: 70%;
 }
