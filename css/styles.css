@@ -133,6 +133,7 @@ header {
   background-attachment: scroll;
   background-position: center center;
   background-size: cover;
+  margin-bottom: 50px;
 }
 
 header.privacy-header {
