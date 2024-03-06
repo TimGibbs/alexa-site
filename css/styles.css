@@ -93,12 +93,18 @@ body {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-.fee-line {
-  max-width: 400px;
+.fees {
+  max-width: 500px;
 }
 
-.fee-line .fee {
-  float: right;
+.fee-line {
+  text-align: left;
+}
+
+.fee {
+  margin-left: auto; 
+  margin-right: 0;
+  width: fit-content;
 }
 
 
@@ -150,6 +156,10 @@ header.accreditation-header {
 
 header.appointments-header {
   background-image: url("../assets/art/Picsart_24-02-23_14-15-44-187.webp");
+}
+
+header.location-header {
+  background-image: url("../assets/art/Picsart_24-02-23_14-14-07-001.webp");
 }
 
 header.contact-header {
